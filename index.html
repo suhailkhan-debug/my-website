@@ -1,2 +1,156 @@
-<h1>Meri jenkins pehli Website</h1>
-<p>Ye website Jenkins pipeline se deploy hui hai.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps CI/CD Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1e40af;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #1e40af;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #1d4ed8;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .status {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My DevOps Project</h1>
+        <p>Automated CI/CD Deployment Using Jenkins</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to My Website!</h2>
+
+        <p>
+            This website is deployed automatically
+            using Jenkins CI/CD Pipeline and GitHub.
+        </p>
+
+        <a href="#services" class="btn">Explore More</a>
+    </section>
+
+    <section class="services" id="services">
+
+        <div class="card">
+            <h3>GitHub</h3>
+            <p>Source code management and version control.</p>
+        </div>
+
+        <div class="card">
+            <h3>Jenkins</h3>
+            <p>Automated build and deployment pipeline.</p>
+        </div>
+
+        <div class="card">
+            <h3>Apache</h3>
+            <p>Hosting website on Linux server.</p>
+        </div>
+
+    </section>
+
+    <section class="hero" id="about">
+        <h2>Deployment Status</h2>
+        <p class="status">● Website Successfully Deployed!</p>
+        <p>Powered by Jenkins CI/CD Automation</p>
+    </section>
+
+    <footer>
+        <p>My First DevOps CI/CD Project | 2026</p>
+    </footer>
+
+</body>
+</html>

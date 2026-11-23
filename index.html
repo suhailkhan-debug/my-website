@@ -1,14 +1,188 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jenkins Practice 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps | Deployment Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #111c33;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #172554, #0f766e);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #dbeafe;
+            max-width: 650px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .services {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c33;
+            color: #94a3b8;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to Jenkins Practice 2</h1>
-    <h2>My Second CI/CD Pipeline</h2>
-    <p>Website deployed successfully using GitHub and Jenkins.</p>
-    <p>Deployment Status: SUCCESS</p>
-</body>
-</html>
+
+    <nav>
+        <div class="logo">DevOps Hub</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Build. Deploy. <span>Automate.</span></h1>
+
+        <p>
+            Welcome to our DevOps Deployment Hub.
+            Automating applications, managing infrastructure
+            and delivering reliable software faster.
+        </p>
+
+        <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our DevOps Technologies</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🐧 Linux</h3>
+                <p>Powerful server administration,
+                system management and automation.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Jenkins</h3>
+                <p>Automated CI/CD pipelines for
+                faster and reliable deployments.</p>
+            </div>
+
+            <div class="card">
+                <h3>🐳 Docker</h3>
+                <p>Containerize applications and
+                simplify deployment workflows.</p>
+            </div>
+
+            <div class="card">
+                <h3>☁️ Cloud</h3>
+                <p>Sc
 

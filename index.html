@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pipeline 6 - My Website</title>
+    <title>DevOps Portfolio | Pipeline 6</title>
 
     <style>
         * {
@@ -16,79 +16,156 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            min-height: 100vh;
+            background: #080d1b;
+            color: #ffffff;
         }
 
         header {
-            padding: 25px;
-            text-align: center;
-            background: #020617;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #10172a;
         }
 
-        header h1 {
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
             color: #38bdf8;
-            font-size: 30px;
-        }
-
-        nav {
-            text-align: center;
-            padding: 15px;
-            background: #1e293b;
         }
 
         nav a {
-            color: white;
+            color: #cbd5e1;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
         }
 
         .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 100px 20px;
+            padding: 40px 20px;
+            background: radial-gradient(
+                circle at top,
+                #1e3a8a,
+                #080d1b 65%
+            );
         }
 
-        .hero h2 {
-            font-size: 45px;
+        .tag {
+            background: #172554;
+            color: #38bdf8;
+            padding: 12px 22px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+            border: 1px solid #2563eb;
+        }
+
+        .hero h1 {
+            font-size: 55px;
             margin-bottom: 20px;
-            color: #facc15;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
         }
 
         .hero p {
-            font-size: 20px;
+            color: #cbd5e1;
+            font-size: 18px;
+            max-width: 650px;
+            line-height: 1.7;
             margin-bottom: 30px;
         }
 
-        .version {
-            display: inline-block;
-            background: #16a34a;
-            padding: 12px 25px;
-            border-radius: 30px;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
+        .button {
             background: #38bdf8;
-            color: #020617;
+            color: #080d1b;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
         }
 
-        .btn:hover {
-            background: #facc15;
+        .button:hover {
+            background: #7dd3fc;
+        }
+
+        .section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 25px;
+        }
+
+        .card {
+            background: #111827;
+            padding: 30px;
+            border: 1px solid #263449;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+
+        .status {
+            color: #4ade80;
+            font-weight: bold;
+            margin-top: 20px;
         }
 
         footer {
+            background: #10172a;
             text-align: center;
             padding: 25px;
-            background: #020617;
-            margin-top: 50px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
@@ -96,42 +173,103 @@
 <body>
 
     <header>
-        <h1>My DevOps Website</h1>
+        <div class="logo">DevOpsLab</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#pipeline">Pipeline</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <section class="hero" id="home">
 
-    <section class="hero">
-
-        <div class="version">
-            PIPELINE 6 - VERSION 2
+        <div class="tag">
+            🚀 JENKINS PIPELINE 6
         </div>
 
-        <h2>Welcome to My Website</h2>
+        <h1>
+            Automate. <span>Deploy.</span> Repeat.
+        </h1>
 
         <p>
-            This website is deployed using Jenkins CI/CD Pipeline.
+            Welcome to my DevOps learning project.
+            This website is managed through GitHub
+            and built using Jenkins CI/CD automation.
         </p>
 
-        <p>
-            GitHub + Jenkins + Linux + DevOps
-        </p>
-
-        <br>
-
-        <a href="#" class="btn">
-            Build Successful!
+        <a class="button" href="#pipeline">
+            Explore My Pipeline
         </a>
+
+    </section>
+
+    <section class="section" id="skills">
+
+        <h2>My DevOps Tools</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🐧 Linux</h3>
+                <p>
+                    Server administration,
+                    shell commands and system management.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🐙 GitHub</h3>
+                <p>
+                    Source code management
+                    and version control.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ Jenkins</h3>
+                <p>
+                    Continuous integration
+                    and automated build pipelines.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📦 Podman</h3>
+                <p>
+                    Container management
+                    and application deployment.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="pipeline">
+
+        <h2>CI/CD Pipeline Status</h2>
+
+        <div class="card">
+
+            <h3>GitHub → Jenkins → Build</h3>
+
+            <p>
+                Source code is checked out,
+                validated and packaged automatically.
+            </p>
+
+            <div class="status">
+                ● Pipeline 6 - Ready for Build
+            </div>
+
+        </div>
 
     </section>
 
     <footer>
         <p>
-            © 2026 My Website | Jenkins Pipeline 6
+            © 2026 DevOpsLab | Built with HTML & CSS
         </p>
     </footer>
 
